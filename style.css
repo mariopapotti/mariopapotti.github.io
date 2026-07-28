@@ -21,3 +21,18 @@ header p {
     color: #cccccc;
     font-size: 1.1em;
 }
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #66ccff;
+}
