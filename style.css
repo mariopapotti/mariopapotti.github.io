@@ -20,8 +20,12 @@ header p {
     font-size: 1.1em;
 }
 
-nav {
-    margin-top: 20px;
+nav{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .hero{
@@ -63,12 +67,12 @@ nav {
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
+    font-weight:bold;
     font-size:1.1em;
-    margin:0 15px;
-    font-size:1.1em;
+    transition:0.3s;
 }
 
 nav a:hover{
     color:#5bbcff;
+    transform:scale(1.08);
 }
