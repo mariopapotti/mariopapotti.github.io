@@ -115,3 +115,17 @@ nav a:hover{
     color:#5bbcff;
     transform:scale(1.08);
 }
+
+#gallery{
+    margin-top:60px;
+    text-align:center;
+}
+
+.featured-image{
+    width:90%;
+    max-width:1000px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+    margin:30px auto;
+    display:block;
+}
