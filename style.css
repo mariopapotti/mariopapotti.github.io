@@ -60,28 +60,32 @@ nav{
 }
 
 .language{
+    display:flex;
+    justify-content:center;
+    gap:15px;
     margin-bottom:25px;
-    font-size:1.1em;
 }
 
-.language a{
+.lang-btn{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    padding:8px 18px;
+    border:2px solid rgba(255,255,255,0.35);
+    border-radius:25px;
     transition:0.3s;
 }
 
-.language a:hover{
+.lang-btn:hover{
+    border-color:#5bbcff;
     color:#5bbcff;
+    transform:translateY(-2px);
 }
 
-.language .active{
-    color:#5bbcff;
-}
-
-.language span{
-    margin:0 10px;
-    color:#bbbbbb;
+.lang-btn.active{
+    background:#5bbcff;
+    border-color:#5bbcff;
+    color:#111;
 }
 
 nav a{
