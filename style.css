@@ -64,6 +64,26 @@ nav{
     font-size:1.1em;
 }
 
+.language a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.language a:hover{
+    color:#5bbcff;
+}
+
+.language .active{
+    color:#5bbcff;
+}
+
+.language span{
+    margin:0 10px;
+    color:#bbbbbb;
+}
+
 nav a{
     color:white;
     text-decoration:none;
