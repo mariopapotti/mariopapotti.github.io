@@ -24,17 +24,6 @@ nav {
     margin-top: 20px;
 }
 
-nav a {
-    color: White;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    color: #66ccff;
-}
-
 .hero{
     height:100vh;
     background-image: url("images/eagle-nebula-m16-hero.jpg");
@@ -74,6 +63,8 @@ nav a:hover {
 nav a{
     color:white;
     text-decoration:none;
+    margin:0 15px;
+    font-size:1.1em;
     margin:0 15px;
     font-size:1.1em;
 }
