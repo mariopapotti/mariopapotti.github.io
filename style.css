@@ -38,8 +38,12 @@ nav a:hover {
 }
 
 .hero{
-    height:70vh;
-    background:#000;
+    height:100vh;
+    background-image: url("images/eagle-nebula-m16-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display:flex;
     justify-content:center;
     align-items:center;
