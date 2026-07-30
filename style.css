@@ -129,3 +129,13 @@ nav a:hover{
     margin:30px auto;
     display:block;
 }
+main{
+    padding:40px;
+    text-align:center;
+}
+hr{
+    margin:40px auto;
+    width:80%;
+    border:0;
+    border-top:1px solid rgba(255,255,255,0.15);
+}
