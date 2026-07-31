@@ -139,3 +139,23 @@ hr{
     border:0;
     border-top:1px solid rgba(255,255,255,0.15);
 }
+section{
+    max-width:1100px;
+    margin:80px auto;
+    padding:20px;
+}
+
+section h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#5bbcff;
+}
+
+section p{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#dddddd;
+}
+html{
+    scroll-behavior:smooth;
+}
