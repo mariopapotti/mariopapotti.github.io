@@ -13,11 +13,11 @@ document.getElementById("btn-en").addEventListener("click", function () {
 function showLanguage(lang) {
 
     document.querySelectorAll(".lang-it").forEach(el => {
-        el.style.display = (lang === "it") ? "" : "none";
+        el.style.display = (lang === "it") ? "block" : "none";
     });
 
     document.querySelectorAll(".lang-en").forEach(el => {
-        el.style.display = (lang === "en") ? "" : "none";
+        el.style.display = (lang === "en") ? "block" : "none";
     });
 
     document.getElementById("btn-it").classList.toggle("active", lang === "it");
