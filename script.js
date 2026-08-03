@@ -12,6 +12,8 @@ document.getElementById("btn-en").addEventListener("click", function () {
 
 function showLanguage(lang) {
 
+    document.documentElement.lang = lang;
+
     document.querySelectorAll(".lang-it").forEach(el => {
         el.style.display = (lang === "it") ? "block" : "none";
     });
