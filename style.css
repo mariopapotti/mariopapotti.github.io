@@ -410,3 +410,33 @@ ul{
     }
 
 }
+
+/* ==========================
+   OBJECT NAVIGATION
+========================== */
+
+.object-navigation{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    margin:60px auto 40px auto;
+    text-align:center;
+
+}
+
+.object-navigation a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.object-navigation a:hover{
+
+    color:#5bbcff;
+
+}
