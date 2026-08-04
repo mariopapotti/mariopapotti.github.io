@@ -358,7 +358,7 @@ ul{
     .name{
         font-size:1.6rem;
         letter-spacing:2px;
-        margin-top:-40px;
+        margin-top:-50px;
     }
 
     .astro{
@@ -370,7 +370,7 @@ ul{
 
     .subtitle{
         font-size:1rem;
-        padding:0 0px;
+        padding:0 10px;
     }
 
     nav{
@@ -383,7 +383,7 @@ ul{
 
     section{
         margin:40px auto;
-        padding:15px;
+        padding:10px;
     }
 
     section h2{
