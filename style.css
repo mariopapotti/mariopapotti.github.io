@@ -64,7 +64,8 @@ nav{
 
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
+    padding-top:12vh;
     align-items:center;
 }
 
