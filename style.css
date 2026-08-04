@@ -400,11 +400,11 @@ ul{
         font-size:1.4rem;
         margin-bottom:10px;
         position: relative;
-        top: -80px;
+        top: -100px;
         }
 
     main p{
-        font-size:0.92rem;
+        font-size:0.9rem;
         line-height:1.5;
         max-width:90%;
         margin-top:5px;
