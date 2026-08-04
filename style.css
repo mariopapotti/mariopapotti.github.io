@@ -352,7 +352,7 @@ ul{
 @media (max-width: 768px) {
 
     main{
-        padding:20px;
+        padding:10px;
     }
 
     .name{
@@ -405,7 +405,7 @@ ul{
         margin-left:auto;
         margin-right:auto;
     }
-    
+
     .gallery-grid{
         grid-template-columns:1fr;
         gap:25px;
