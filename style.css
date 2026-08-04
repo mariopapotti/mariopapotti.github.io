@@ -358,14 +358,14 @@ ul{
     .name{
         font-size:1.6rem;
         letter-spacing:2px;
-        margin-top:-80px;
+        margin-top:-50px;
     }
 
     .astro{
         font-size:1.7rem;
         letter-spacing:3px;
         line-height:1.1;
-        margin-top:-20px;
+        margin-top:-5px;
     }
 
     .subtitle{
