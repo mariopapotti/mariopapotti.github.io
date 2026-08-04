@@ -352,18 +352,20 @@ ul{
 @media (max-width: 768px) {
 
     main{
-        padding:0px;
+        padding:20px;
     }
 
     .name{
         font-size:1.6rem;
         letter-spacing:2px;
+        margin-top:-20px;
     }
 
     .astro{
         font-size:1.7rem;
         letter-spacing:3px;
-        line-height:1.2;
+        line-height:1.1;
+        margin-top:-5px;
     }
 
     .subtitle{
