@@ -396,14 +396,16 @@ ul{
 
     /* Home */
 
-    main h2{
+   main h2{
         font-size:1.4rem;
+        margin-bottom:10px;
     }
 
     main p{
         font-size:0.92rem;
         line-height:1.5;
         max-width:90%;
+        margin-top:5px;
         margin-left:auto;
         margin-right:auto;
     }
