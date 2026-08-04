@@ -399,7 +399,9 @@ ul{
    main h2{
         font-size:1.4rem;
         margin-bottom:10px;
-    }
+        position: relative;
+        top: -40px;
+        }
 
     main p{
         font-size:0.92rem;
