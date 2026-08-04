@@ -351,6 +351,14 @@ ul{
 
 @media (max-width: 768px) {
 
+    .hero{
+        height:75vh;
+    }
+
+    .overlay{
+        padding-top:28vh;
+    }
+
     main{
         padding:40px;
     }
