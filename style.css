@@ -392,6 +392,20 @@ ul{
         font-size:1rem;
     }
 
+    /* Home */
+
+    main h2{
+        font-size:1.4rem;
+    }
+
+    main p{
+        font-size:0.92rem;
+        line-height:1.5;
+        max-width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
     .gallery-grid{
         grid-template-columns:1fr;
         gap:25px;
