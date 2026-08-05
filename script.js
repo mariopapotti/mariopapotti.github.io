@@ -1,5 +1,3 @@
-Certo. Questo è il vecchio script.js ben formattato, identico a quello che funzionava.
-
 // Lingua iniziale
 showLanguage("it");
 
