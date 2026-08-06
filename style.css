@@ -452,9 +452,9 @@ ul{
 .object-navigation{
 
     display:flex;
-    justify-content:center;
+    justify-content:flex-end;
     align-items:center;
-    gap:35px;
+    gap:30px;
     margin:60px auto 40px auto;
     text-align:center;
 
@@ -484,12 +484,14 @@ ul{
 .top-bar{
 
     max-width:1200px;
-    margin:25px auto;
+    margin:25px auto 10px auto;
     padding:0 20px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 .language-switch{
