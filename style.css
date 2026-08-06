@@ -474,3 +474,32 @@ ul{
     color:#5bbcff;
 
 }
+
+.top-navigation{
+
+    margin:20px auto 30px auto;
+
+}
+
+.top-bar{
+
+    max-width:1200px;
+    margin:25px auto;
+    padding:0 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.language-switch{
+
+    display:flex;
+    gap:10px;
+
+}
+
+.top-bar .object-navigation{
+
+    margin:0;
+}
