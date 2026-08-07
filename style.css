@@ -192,7 +192,7 @@ html{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:60px;
+    gap:90px;
     width:100%;
     margin:10px auto 30px auto;
 }
