@@ -460,6 +460,17 @@ ul{
         top: -50px;
     }
 
+    .gallery-navigation{
+        gap:22px;
+        font-size:0.95rem;
+        margin-bottom:25px;
+    }
+
+    .gallery-subtitle{
+        font-size:0.85rem;
+        padding:0 10px;
+    }
+
     .gallery-grid{
         grid-template-columns:1fr;
         gap:25px;
