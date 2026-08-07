@@ -539,16 +539,24 @@ ul{
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        gap:12px;
+        gap:4px;
     }
+
+    .language-switch{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+        margin-bottom:4px;
+    }
+
     .top-bar .object-navigation{
         display:flex;
         justify-content:center;
-        gap:18px;
-        flex-wrap:wrap;
+        align-items:center;
+        gap:28px;
+        flex-wrap:nowrap;
         width:100%;
+        margin:0;
+        font-size:0.90rem;
     }
-    .language-switch{
-        justify-content:center;
     }
-}
