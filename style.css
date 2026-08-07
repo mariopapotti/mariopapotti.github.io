@@ -175,6 +175,11 @@ html{
 
 }
 
+.gallery-navigation{
+    justify-content:center;
+    margin:15px 0 30px;
+}
+
 .gallery-grid a{
 
     display:inline-block;
