@@ -508,13 +508,6 @@ ul{
 
 }
 
-.top-bar{
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:8px;
-}
-
 .language-switch{
     display:flex;
     justify-content:center;
@@ -559,4 +552,12 @@ ul{
         margin:0;
         font-size:0.90rem;
     }
+
+    .object-hero{
+        margin-top:0;
     }
+
+    .object-hero p{
+        margin:6px 0;
+    }
+}
