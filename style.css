@@ -508,6 +508,18 @@ ul{
 
 }
 
+.top-bar{
+    max-width:1200px;
+    margin:25px auto 10px auto;
+    padding:0 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
 .language-switch{
     display:flex;
     justify-content:center;
