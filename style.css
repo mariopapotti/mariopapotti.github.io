@@ -513,28 +513,22 @@ ul{
     margin:25px auto 10px auto;
     padding:0 20px;
 
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
     align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
 }
 
 .language-switch{
     display:flex;
-    justify-content:center;
     gap:10px;
+    justify-content:flex-start;
 }
 
 .top-bar .object-navigation{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:24px;
-    flex-wrap:nowrap;
-    width:100%;
-    margin:0;
-    font-size:0.95rem;
+    gap:50px;
 }
 
 
