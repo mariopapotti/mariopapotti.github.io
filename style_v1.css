@@ -505,3 +505,24 @@ ul{
 
     margin:0;
 }
+
+
+/* ===== Mobile top bar ===== */
+@media (max-width:768px){
+    .top-bar{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:12px;
+    }
+    .top-bar .object-navigation{
+        display:flex;
+        justify-content:center;
+        gap:18px;
+        flex-wrap:wrap;
+        width:100%;
+    }
+    .language-switch{
+        justify-content:center;
+    }
+}
