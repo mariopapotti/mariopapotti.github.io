@@ -175,6 +175,38 @@ html{
 
 }
 
+/* ==========================
+   Gallery Navigation
+========================== */
+
+.gallery-subtitle{
+    text-align:center;
+    color:#b8b8b8;
+    font-size:0.95rem;
+    font-style:italic;
+    margin-top:-5px;
+    margin-bottom:18px;
+}
+
+.gallery-navigation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-bottom:35px;
+}
+
+.gallery-navigation a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.gallery-navigation a:hover{
+    color:#66b3ff;
+}
+
 .gallery-navigation{
     justify-content:center;
     margin:15px 0 30px;
