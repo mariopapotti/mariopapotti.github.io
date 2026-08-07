@@ -192,8 +192,8 @@ html{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:50px;
-    margin-bottom:35px;
+    gap:60px;
+    margin:15px auto 35px auto;
 }
 
 .gallery-navigation a{
@@ -205,11 +205,6 @@ html{
 
 .gallery-navigation a:hover{
     color:#66b3ff;
-}
-
-.gallery-navigation{
-    justify-content:center;
-    margin:15px 0 30px;
 }
 
 .gallery-grid a{
