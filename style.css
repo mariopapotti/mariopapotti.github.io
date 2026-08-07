@@ -194,7 +194,7 @@ html{
     align-items:center;
     gap:60px;
     width:100%;
-    margin:15px auto 35px auto;
+    margin:10px auto 30px auto;
 }
 
 .gallery-navigation a{
@@ -477,12 +477,14 @@ ul{
 ========================== */
 
 .object-navigation{
+
     display:flex;
-    justify-content:center;
+    justify-content:flex-end;
     align-items:center;
     gap:30px;
     margin:60px auto 40px auto;
     text-align:center;
+
 }
 
 .object-navigation a{
