@@ -181,7 +181,7 @@ html{
 
 .gallery-subtitle{
     text-align:center;
-    color:#b8b8b8;
+    color:#c8c8c8;
     font-size:0.95rem;
     font-style:italic;
     margin-top:-5px;
@@ -509,28 +509,27 @@ ul{
 }
 
 .top-bar{
-
-    max-width:1200px;
-    margin:25px auto 10px auto;
-    padding:0 20px;
-
-    display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
+    gap:8px;
 }
 
 .language-switch{
-
     display:flex;
+    justify-content:center;
     gap:10px;
-
 }
 
 .top-bar .object-navigation{
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    flex-wrap:nowrap;
+    width:100%;
     margin:0;
+    font-size:0.95rem;
 }
 
 
