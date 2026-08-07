@@ -193,6 +193,7 @@ html{
     justify-content:center;
     align-items:center;
     gap:60px;
+    width:100%;
     margin:15px auto 35px auto;
 }
 
@@ -204,53 +205,36 @@ html{
 }
 
 .gallery-navigation a:hover{
-    color:#66b3ff;
+    color:#5bbcff;
 }
 
 .gallery-grid a{
-
     display:inline-block;
     width:100%;
     margin-bottom:22px;
-
     text-decoration:none;
     color:white;
-
     transition:.35s;
-
     break-inside:avoid;
-
 }
 
 .gallery-grid a:hover{
-
     transform:translateY(-6px);
-
 }
 
 .gallery-grid img{
-
     width:100%;
     height:auto;
-
     display:block;
-
     border-radius:10px;
-
     box-shadow:0 0 18px rgba(0,0,0,.45);
-
 }
 
 .gallery-grid h3{
-
     margin:10px 0 0 0;
-
     text-align:center;
-
     font-size:.95rem;
-
     letter-spacing:1px;
-
 }
 
 /* ===== LANGUAGE ===== */
@@ -493,14 +477,12 @@ ul{
 ========================== */
 
 .object-navigation{
-
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
     gap:30px;
     margin:60px auto 40px auto;
     text-align:center;
-
 }
 
 .object-navigation a{
