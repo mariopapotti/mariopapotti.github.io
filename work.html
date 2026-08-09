@@ -62,21 +62,19 @@
 
     <h1>
 
-        <span class="lang-it">M16 – Nebulosa Aquila</span>
+        <span class="lang-it">Elaborazione astrofotografica con Pixinsight/span>
 
-        <span class="lang-en">M16 – Eagle Nebula</span>
+        <span class="lang-en">Astrophotographic process with Pixinsight</span>
 
     </h1>
 
     <p>
         <span class="lang-it">
-            Messier 16 • NGC 6611<br>
-            Nebulosa a emissione in Serpens Cauda
+            Descrizione del contenuto
         </span>
 
         <span class="lang-en">
-            Messier 16 • NGC 6611<br>
-            Emission Nebula in Serpens Cauda
+            Content Description
         </span>
     </p>
 
@@ -103,7 +101,6 @@
             Il documento qui presentato raccoglie il mio personale flusso di lavoro per l'elaborazione delle immagini deep sky con PixInsight. Non vuole essere un manuale completo del software, ma una guida pratica basata sulla mia esperienza di acquisizione ed elaborazione delle immagini astronomiche.
             Mi scuso fin d'ora per eventuali imprecisioni o inesattezze. L'astrofotografia è una disciplina in continua evoluzione e anche il metodo di elaborazione qui descritto rappresenta semplicemente il mio modo di lavorare, maturato nel tempo.
             È inoltre importante ricordare che non esiste un flusso di lavoro universale. Ogni elaborazione dipende dal risultato che si desidera ottenere, dal soggetto ripreso, dalla qualità dei dati acquisiti, dalle condizioni del cielo durante la ripresa e dal setup utilizzato. Per questo motivo alcune operazioni possono essere anticipate, posticipate, ripetute oppure omesse in funzione delle caratteristiche dell'immagine.
-
         </span>
 
         <span class="lang-en">
@@ -115,40 +112,26 @@
 
     </p>
 
-    <p>
+</section>
 
-        <span class="lang-it">
-            La nebulosa è celebre per ospitare alcune delle strutture più spettacolari
-            del cielo profondo, tra cui i famosi Pilastri della Creazione,
-            resi celebri dalle immagini del Telescopio Spaziale Hubble nel 1995.
-            Al suo interno si trova anche la Guglia Stellare,
-            conosciuta anche come Fata della Nebulosa Aquila,
-            una straordinaria colonna di gas e polveri nella quale sono in corso
-            processi di formazione stellare.
-        </span>
+<section>
 
-        <span class="lang-en">
-            The nebula is best known for containing some of the most spectacular
-            structures in the deep sky, including the famous Pillars of Creation,
-            made world-famous by images captured by the Hubble Space Telescope in 1995.
-            It also contains the Spire, sometimes referred to as the Fairy of the Eagle Nebula,
-            an extraordinary column of gas and dust where new stars are still forming.
-        </span>
+    <h2>
 
-    </p>
+        <span class="lang-it">Acquisizione delle immagini astronomiche</span>
+
+        <span class="lang-en">Acquisition of astronomical images</span>
+
+    </h2>
 
     <p>
 
         <span class="lang-it">
-            Queste imponenti strutture sono state scolpite dall'intensa radiazione
-            e dal vento stellare emessi dalle giovani stelle massicce
-            dell'ammasso aperto centrale.
+            In questa sezione descrivo l’acquisizione delle immagini tramite camera astronomica: scelta del Gain, gestione della temperatura, Light frame e file di calibrazione (Bias, Dark, Flat e Dark Flat).            
         </span>
 
         <span class="lang-en">
-            These impressive structures have been sculpted by the intense radiation
-            and stellar winds produced by the young massive stars
-            within the central open cluster.
+            In this section I describe the acquisition of images using an astronomical camera: choice of Gain, temperature management, Light frame and calibration files (Bias, Dark, Flat and Dark Flat).
         </span>
 
     </p>
@@ -159,155 +142,25 @@
 
     <h2>
 
-        <span class="lang-it">Dati principali</span>
+        <span class="lang-it">Preparazione dei dati in PixInsight</span>
 
-        <span class="lang-en">Main Object Data</span>
-
-    </h2>
-
-    <table>
-
-        <tr>
-            <td>
-                <span class="lang-it">Nome</span>
-                <span class="lang-en">Name</span>
-            </td>
-            <td>
-                <span class="lang-it">Nebulosa Aquila / Nebulosa Regina delle Stelle</span>
-                <span class="lang-en">Eagle Nebula / Star Queen Nebula</span>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Cataloghi</span>
-                <span class="lang-en">Catalogues</span>
-            </td>
-            <td>Messier 16 • NGC 6611 • Sh2-49</td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Costellazione</span>
-                <span class="lang-en">Constellation</span>
-            </td>
-            <td>Serpens</td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Distanza</span>
-                <span class="lang-en">Distance</span>
-            </td>
-            <td>
-                <span class="lang-it">5.700 ± 400 anni luce</span>
-                <span class="lang-en">5,700 ± 400 light-years</span>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Tipo di oggetto</span>
-                <span class="lang-en">Object Type</span>
-            </td>
-            <td>
-                <span class="lang-it">Nebulosa a emissione / Regione H II</span>
-                <span class="lang-en">Emission Nebula / H II Region</span>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Dimensione apparente</span>
-                <span class="lang-en">Apparent Size</span>
-            </td>
-            <td>70 × 50 arcmin</td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Magnitudine apparente</span>
-                <span class="lang-en">Apparent Magnitude</span>
-            </td>
-            <td>6.4</td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="lang-it">Caratteristica principale</span>
-                <span class="lang-en">Main Feature</span>
-            </td>
-            <td>
-                <span class="lang-it">Pilastri della Creazione</span>
-                <span class="lang-en">Pillars of Creation</span>
-            </td>
-        </tr>
-
-    </table>
-
-</section>
-
-<section>
-
-    <h2>
-
-        <span class="lang-it">Come trovarla</span>
-
-        <span class="lang-en">How to Find It</span>
+        <span class="lang-en">Data preparation in PixInsight</span>
 
     </h2>
 
     <p>
 
         <span class="lang-it">
-            Le costellazioni di Ofiuco e del Serpente sono strettamente collegate
-            nel cielo estivo. Ofiuco divide il Serpente in due parti distinte:
-            <strong>Serpens Caput</strong> (la Testa) a ovest e
-            <strong>Serpens Cauda</strong> (la Coda) a est.
+            Il flusso di post produzione inizia con la preparazione dei frames all’integrazione: analisi dei frame, selezione delle immagini migliori e calibrazione/integrrazione tramite Weighted Batch Preprocessing (WBPP).
         </span>
 
         <span class="lang-en">
-            The constellations of Ophiuchus and Serpens are closely connected in the
-            summer sky. Ophiuchus divides Serpens into two separate parts:
-            <strong>Serpens Caput</strong> (the Head) to the west and
-            <strong>Serpens Cauda</strong> (the Tail) to the east.
+            The post-production workflow begins with preparing the frames for integration: frame analysis, selection of the best images and calibration/integration via Weighted Batch Preprocessing (WBPP).
         </span>
 
     </p>
 
-    <p>
-
-        <span class="lang-it">
-            M16 si trova appena a ovest di <strong>Serpens Cauda</strong>.
-            Può essere individuata partendo dalla stella
-            <strong>γ Scuti (Gamma Scuti)</strong> e spostandosi di circa
-            3° verso OSO.
-        </span>
-
-        <span class="lang-en">
-            M16 is located just west of <strong>Serpens Cauda</strong>.
-            It can be found by starting from the star
-            <strong>γ Scuti (Gamma Scuti)</strong> and moving approximately
-            3° toward WSW.
-        </span>
-
-    </p>
-
-    <p>
-
-        <span class="lang-it">
-            Il periodo migliore per osservarla va da
-            <strong>giugno a ottobre</strong>, quando la Nebulosa Aquila
-            raggiunge la massima altezza nel cielo durante le ore serali.
-        </span>
-
-        <span class="lang-en">
-            The best observing season is from
-            <strong>June to October</strong>, when the Eagle Nebula reaches
-            its highest position in the evening sky.
-        </span>
-
-    </p>
+     </p>
 
     <!-- Sky map -->
     <img src="images/M16-map.jpg"
