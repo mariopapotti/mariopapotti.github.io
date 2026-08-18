@@ -567,3 +567,17 @@ ul{
         margin:6px 0;
     }
 }
+
+/* ==========================
+   WORKFLOW PAGE
+========================== */
+
+.thumb-image{
+    display:block;
+    width:420px;
+    max-width:90%;
+    height:auto;
+    margin:30px auto;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
+}
