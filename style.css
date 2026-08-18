@@ -633,3 +633,22 @@ ul{
     }
 
 }
+
+/* ==========================
+   PDF WORKFLOW
+========================== */
+
+.pdf-download {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.pdf-download a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-download a:hover {
+    color: #55bfff;
+}
