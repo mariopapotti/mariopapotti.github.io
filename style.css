@@ -635,6 +635,29 @@ ul{
 }
 
 /* ==========================
+   PDF LINK - SMARTPHONE
+========================== */
+
+@media (max-width: 768px) {
+
+    .pdf-download {
+        text-align: center;
+        margin: 35px 0 20px;
+    }
+
+    .pdf-download a {
+        color: white !important;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .pdf-download a:hover {
+        color: #5bbcff !important;
+    }
+
+}
+
+/* ==========================
    PDF WORKFLOW
 ========================== */
 
