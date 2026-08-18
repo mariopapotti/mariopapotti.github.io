@@ -627,8 +627,8 @@ ul{
 @media (max-width:768px){
 
     .workflow-cover-link{
-        width:180px;
-        max-width:60%;
+        width:150px;
+        max-width:50%;
         margin:20px auto;
     }
 
