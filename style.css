@@ -675,3 +675,19 @@ ul{
 .pdf-download a:hover {
     color: #55bfff;
 }
+
+/* ==========================
+   WORKFLOW - HOME MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .workflow img{
+        width:220px;
+        max-width:70%;
+        height:auto;
+        margin:20px auto;
+        display:block;
+    }
+
+}
