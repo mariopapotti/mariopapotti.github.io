@@ -175,66 +175,50 @@ html{
 
 }
 
-/* ==========================
-   Gallery Navigation
-========================== */
-
-.gallery-subtitle{
-    text-align:center;
-    color:#c8c8c8;
-    font-size:0.95rem;
-    font-style:italic;
-    margin-top:-5px;
-    margin-bottom:18px;
-}
-
-.gallery-navigation{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:90px;
-    width:100%;
-    margin:10px auto 30px auto;
-}
-
-.gallery-navigation a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.gallery-navigation a:hover{
-    color:#5bbcff;
-}
-
 .gallery-grid a{
+
     display:inline-block;
     width:100%;
     margin-bottom:22px;
+
     text-decoration:none;
     color:white;
+
     transition:.35s;
+
     break-inside:avoid;
+
 }
 
 .gallery-grid a:hover{
+
     transform:translateY(-6px);
+
 }
 
 .gallery-grid img{
+
     width:100%;
     height:auto;
+
     display:block;
+
     border-radius:10px;
+
     box-shadow:0 0 18px rgba(0,0,0,.45);
+
 }
 
 .gallery-grid h3{
+
     margin:10px 0 0 0;
+
     text-align:center;
+
     font-size:.95rem;
+
     letter-spacing:1px;
+
 }
 
 /* ===== LANGUAGE ===== */
@@ -285,7 +269,7 @@ html{
 
     text-align:center;
 
-    margin:15px auto 60px auto;
+    margin:40px auto 70px auto;
 
 }
 
@@ -439,17 +423,6 @@ ul{
         top: -50px;
     }
 
-    .gallery-navigation{
-        gap:22px;
-        font-size:0.95rem;
-        margin-bottom:25px;
-    }
-
-    .gallery-subtitle{
-        font-size:0.85rem;
-        padding:0 10px;
-    }
-
     .gallery-grid{
         grid-template-columns:1fr;
         gap:25px;
@@ -509,199 +482,33 @@ ul{
 }
 
 .top-bar{
+
     max-width:1200px;
     margin:25px auto 10px auto;
     padding:0 20px;
 
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 .language-switch{
+
     display:flex;
     gap:10px;
-    justify-content:flex-start;
+
 }
 
 .top-bar .object-navigation{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:50px;
+
+    margin:0;
 }
 
-
-/* ===== Mobile top bar ===== */
-@media (max-width:768px){
-    .top-bar{
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:4px;
-    }
-
-    .language-switch{
-        display:flex;
-        justify-content:center;
-        gap:10px;
-        margin-bottom:4px;
-    }
-
-    .top-bar .object-navigation{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:28px;
-        flex-wrap:nowrap;
-        width:100%;
-        margin:0;
-        font-size:0.90rem;
-    }
-
-    .object-hero{
-        margin-top:0;
-    }
-
-    .object-hero p{
-        margin:6px 0;
-    }
-}
-
-/* ==========================
-   WORKFLOW PAGE
-========================== */
-
-.thumb-image{
-    display:block;
-    width:420px;
-    max-width:90%;
-    height:auto;
-    margin:30px auto;
-    border-radius:10px;
-    box-shadow:0 0 20px rgba(0,0,0,.45);
-}
-
-@media (max-width:768px){
-
-    .thumb-image{
-        width:220px;
-        max-width:70%;
-    }
-
-}
-
-/* ==========================
-   WORKFLOW COVER
-========================== */
-
-.workflow-cover{
-    text-align:center;
-}
-
-.workflow-cover-link{
-    display:block;
-    width:420px;
-    max-width:80%;
-    margin:25px auto;
-}
-
-.workflow-hero{
-    display:block;
-    width:100%;
-    height:auto;
-    border-radius:10px;
-    box-shadow:0 0 20px rgba(0,0,0,.45);
-    transition:.3s;
-}
-
-.workflow-cover-link:hover .workflow-hero{
-    transform:translateY(-5px);
-}
-
-
-/* ==========================
-   WORKFLOW COVER - MOBILE
-========================== */
-
-@media (max-width:768px){
-
-    .workflow-cover-link{
-        width:220px;
-        max-width:70%;
-        margin:20px auto;
-    }
-
-}
-
-/* ==========================
-   PDF LINK - SMARTPHONE
-========================== */
-
-@media (max-width: 768px) {
-
-    .pdf-download {
-        text-align: center;
-        margin: 35px 0 20px;
-    }
-
-    .pdf-download a {
-        color: white !important;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .pdf-download a:hover {
-        color: #5bbcff !important;
-    }
-
-}
-
-/* ==========================
-   PDF WORKFLOW
-========================== */
-
-.pdf-download {
-    text-align: center;
-    margin: 40px 0 20px;
-}
-
-.pdf-download a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.pdf-download a:hover {
-    color: #55bfff;
-}
-
-/* ==========================
-   WORKFLOW - HOME MOBILE
-========================== */
-
-@media (max-width:768px){
-
-    .workflow img{
-        width:220px;
-        max-width:70%;
-        height:auto;
-        margin:20px auto;
-        display:block;
-    }
-
-}
-
-/* ==========================
-   WORKFLOW NAVIGATION - HOME
-========================== */
-
-.workflow-navigation{
-    justify-content:center;
-}
-/* ==========================
-   HOME SECTION LINKS
-========================== */
+/* ===========================
+   SECTION LINKS / EQUIPMENT
+=========================== */
 
 .section-link{
     display:block;
@@ -709,15 +516,57 @@ ul{
     text-decoration:none;
 }
 
-.section-link h2,
-.section-link p{
+.section-link h2{
     transition:.3s;
 }
 
 .section-link:hover h2{
-    color:#7ac9ff;
+    color:#7ac8ff;
 }
 
-.section-link:hover p{
+.equipment-section{
+    max-width:900px;
+    margin:70px auto;
+}
+
+.equipment-card{
+    max-width:850px;
+    margin:25px auto;
+    padding:24px 28px;
+    text-align:left;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:12px;
+    background:rgba(255,255,255,.025);
+}
+
+.equipment-card h3{
+    margin:0 0 14px 0;
     color:#ffffff;
+    font-size:1.25rem;
+}
+
+.equipment-card p,
+.equipment-card li{
+    color:#dddddd;
+    line-height:1.7;
+}
+
+.equipment-card ul{
+    margin:0;
+    padding-left:25px;
+}
+
+@media (max-width:768px){
+    .equipment-section{
+        margin:50px auto;
+        padding:10px;
+    }
+
+    .equipment-card{
+        padding:18px;
+    }
+
+    .equipment-card h3{
+        font-size:1.1rem;
+    }
 }
