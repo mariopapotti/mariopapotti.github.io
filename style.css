@@ -460,7 +460,8 @@ ul{
 
 }
 
-.object-navigation a{
+.object-navigation a,
+.object-navigation a:visited{
 
     color:white;
     text-decoration:none;
@@ -582,4 +583,24 @@ ul{
 
 .contact-links a:hover {
     text-decoration: underline;
+}
+
+/* ==========================
+   GALLERY NAVIGATION
+========================== */
+
+.gallery-navigation a,
+.gallery-navigation a:visited{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.gallery-navigation a:hover{
+
+    color:#5bbcff;
+
 }
