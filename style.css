@@ -582,6 +582,15 @@ ul{
     box-shadow:0 0 20px rgba(0,0,0,.45);
 }
 
+@media (max-width:768px){
+
+    .thumb-image{
+        width:220px;
+        max-width:70%;
+    }
+
+}
+
 /* ==========================
    WORKFLOW COVER
 ========================== */
@@ -610,34 +619,12 @@ ul{
     transform:translateY(-5px);
 }
 
-.workflow-click{
-    display:block;
-    position:relative;
-    clear:both;
-    width:100%;
-    box-sizing:border-box;
-    text-align:center;
-    margin:25px auto 0 auto !important;
-    padding:0 15px;
-    color:white;
-    font-size:1rem;
-    line-height:1.5;
-}
-
-.workflow-navigation{
-    justify-content:center;
-}
 
 /* ==========================
-   WORKFLOW - MOBILE
+   WORKFLOW COVER - MOBILE
 ========================== */
 
 @media (max-width:768px){
-
-    .thumb-image{
-        width:220px;
-        max-width:70%;
-    }
 
     .workflow-cover-link{
         width:220px;
@@ -645,21 +632,92 @@ ul{
         margin:20px auto;
     }
 
-    .workflow-cover .workflow-click{
-        display:block;
-        position:static;
-        top:auto;
-        clear:both;
-        width:100%;
-        box-sizing:border-box;
-        margin:25px auto 0 auto !important;
-        padding:0 15px;
-        font-size:1rem;
-        line-height:1.5;
-        text-align:center;
+}
+
+/* ==========================
+   PDF LINK - SMARTPHONE
+========================== */
+
+@media (max-width: 768px) {
+
+    .pdf-download {
+        text-align: center;
+        margin: 35px 0 20px;
     }
 
-    .workflow-navigation{
-        justify-content:center;
+    .pdf-download a {
+        color: white !important;
+        text-decoration: none;
+        font-weight: bold;
     }
+
+    .pdf-download a:hover {
+        color: #5bbcff !important;
+    }
+
+}
+
+/* ==========================
+   PDF WORKFLOW
+========================== */
+
+.pdf-download {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.pdf-download a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-download a:hover {
+    color: #55bfff;
+}
+
+/* ==========================
+   WORKFLOW - HOME MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .workflow img{
+        width:220px;
+        max-width:70%;
+        height:auto;
+        margin:20px auto;
+        display:block;
+    }
+
+}
+
+/* ==========================
+   WORKFLOW NAVIGATION - HOME
+========================== */
+
+.workflow-navigation{
+    justify-content:center;
+}
+/* ==========================
+   HOME SECTION LINKS
+========================== */
+
+.section-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+
+.section-link h2,
+.section-link p{
+    transition:.3s;
+}
+
+.section-link:hover h2{
+    color:#7ac9ff;
+}
+
+.section-link:hover p{
+    color:#ffffff;
 }
