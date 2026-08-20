@@ -691,3 +691,11 @@ ul{
     }
 
 }
+
+/* ==========================
+   WORKFLOW NAVIGATION - HOME
+========================== */
+
+.workflow-navigation{
+    justify-content:center;
+}
