@@ -582,15 +582,6 @@ ul{
     box-shadow:0 0 20px rgba(0,0,0,.45);
 }
 
-@media (max-width:768px){
-
-    .thumb-image{
-        width:220px;
-        max-width:70%;
-    }
-
-}
-
 /* ==========================
    WORKFLOW COVER
 ========================== */
@@ -619,120 +610,22 @@ ul{
     transform:translateY(-5px);
 }
 
-
-/* ==========================
-   WORKFLOW COVER - MOBILE
-========================== */
-
-@media (max-width:768px){
-
-    .workflow-cover-link{
-        width:220px;
-        max-width:70%;
-        margin:20px auto;
-    }
-
-}
-
-/* ==========================
-   PDF LINK - SMARTPHONE
-========================== */
-
-@media (max-width: 768px) {
-
-    .pdf-download {
-        text-align: center;
-        margin: 35px 0 20px;
-    }
-
-    .pdf-download a {
-        color: white !important;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .pdf-download a:hover {
-        color: #5bbcff !important;
-    }
-
-}
-
-/* ==========================
-   PDF WORKFLOW
-========================== */
-
-.pdf-download {
-    text-align: center;
-    margin: 40px 0 20px;
-}
-
-.pdf-download a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.pdf-download a:hover {
-    color: #55bfff;
-}
-
-/* ==========================
-   WORKFLOW - HOME MOBILE
-========================== */
-
-@media (max-width:768px){
-
-    .workflow img{
-        width:220px;
-        max-width:70%;
-        height:auto;
-        margin:20px auto;
-        display:block;
-    }
-
-}
-
-/* ==========================
-   WORKFLOW NAVIGATION - HOME
-========================== */
-
-.workflow-navigation{
-    justify-content:center;
-}
-/* ==========================
-   WORKFLOW
-========================== */
-
-.workflow-cover{
-    text-align:center;
-}
-
-.workflow-cover-link{
-    display:block;
-    width:420px;
-    max-width:80%;
-    margin:25px auto;
-}
-
-.workflow-hero{
-    display:block;
-    width:100%;
-    height:auto;
-    border-radius:10px;
-    box-shadow:0 0 20px rgba(0,0,0,.45);
-    transition:.3s;
-}
-
-.workflow-cover-link:hover .workflow-hero{
-    transform:translateY(-5px);
-}
-
 .workflow-click{
+    display:block;
+    position:relative;
+    clear:both;
+    width:100%;
+    box-sizing:border-box;
     text-align:center;
-    margin:25px auto 0 auto;
+    margin:25px auto 0 auto !important;
+    padding:0 15px;
     color:white;
     font-size:1rem;
     line-height:1.5;
+}
+
+.workflow-navigation{
+    justify-content:center;
 }
 
 /* ==========================
@@ -741,6 +634,11 @@ ul{
 
 @media (max-width:768px){
 
+    .thumb-image{
+        width:220px;
+        max-width:70%;
+    }
+
     .workflow-cover-link{
         width:220px;
         max-width:70%;
@@ -748,7 +646,8 @@ ul{
     }
 
     .workflow-click{
-        margin:25px auto 0 auto;
+        width:100%;
+        margin:25px auto 0 auto !important;
         padding:0 15px;
         font-size:1rem;
         line-height:1.5;
