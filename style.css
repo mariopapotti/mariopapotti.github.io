@@ -699,3 +699,62 @@ ul{
 .workflow-navigation{
     justify-content:center;
 }
+/* ==========================
+   WORKFLOW
+========================== */
+
+.workflow-cover{
+    text-align:center;
+}
+
+.workflow-cover-link{
+    display:block;
+    width:420px;
+    max-width:80%;
+    margin:25px auto;
+}
+
+.workflow-hero{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
+    transition:.3s;
+}
+
+.workflow-cover-link:hover .workflow-hero{
+    transform:translateY(-5px);
+}
+
+.workflow-click{
+    text-align:center;
+    margin:25px auto 0 auto;
+    color:white;
+    font-size:1rem;
+    line-height:1.5;
+}
+
+/* ==========================
+   WORKFLOW - MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .workflow-cover-link{
+        width:220px;
+        max-width:70%;
+        margin:20px auto;
+    }
+
+    .workflow-click{
+        margin:25px auto 0 auto;
+        padding:0 15px;
+        font-size:1rem;
+        line-height:1.5;
+    }
+
+    .workflow-navigation{
+        justify-content:center;
+    }
+}
