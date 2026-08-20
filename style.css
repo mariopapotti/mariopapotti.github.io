@@ -645,12 +645,18 @@ ul{
         margin:20px auto;
     }
 
-    .workflow-click{
+    .workflow-cover .workflow-click{
+        display:block;
+        position:static;
+        top:auto;
+        clear:both;
         width:100%;
+        box-sizing:border-box;
         margin:25px auto 0 auto !important;
         padding:0 15px;
         font-size:1rem;
         line-height:1.5;
+        text-align:center;
     }
 
     .workflow-navigation{
