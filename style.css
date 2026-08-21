@@ -640,3 +640,25 @@ ul{
         height: auto;
     }
 }
+
+
+/* ==========================
+   ABOUT - ACKNOWLEDGEMENTS LINK
+========================== */
+
+.about-thanks-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.about-thanks-link a,
+.about-thanks-link a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-thanks-link a:hover {
+    color: #5bbcff;
+    text-decoration: underline;
+}
