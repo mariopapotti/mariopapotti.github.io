@@ -428,6 +428,15 @@ ul{
         gap:25px;
     }
 
+    /* Workflow images on smartphone */
+    .thumb-image {
+        width: 90%;
+        max-width: 800px;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+    }
+
     .hero-image,
     .featured-image,
     .object-map{
