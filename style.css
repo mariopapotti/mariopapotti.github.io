@@ -163,6 +163,10 @@ section p{
     color:#dddddd;
 }
 
+.equation {
+    text-align: center;
+}
+
 html{
     scroll-behavior:smooth;
 }
