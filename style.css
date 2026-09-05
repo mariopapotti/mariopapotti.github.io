@@ -43,6 +43,22 @@ nav{
     flex-wrap:wrap;
 }
 
+/* Keep the navigation and Documents menu above the page content. */
+nav{
+    position:relative;
+    z-index:2000;
+}
+
+.nav-dropdown{
+    z-index:2001;
+}
+
+.nav-dropdown-menu,
+.nav-dropdown-menu a{
+    position:relative;
+    z-index:2002;
+}
+
 .hero{
     height:100vh;
     background-image: url("images/eagle-nebula-m16-hero.jpg");
@@ -137,6 +153,8 @@ main{
     margin-top:-200px;
     padding:40px;
     text-align:center;
+    position:relative;
+    z-index:1;
 }
 
 hr{
@@ -838,6 +856,14 @@ ul{
     .nav-dropdown-menu a {
         white-space: normal;
         text-align: center;
+        position: relative;
+        z-index: 2003;
+    }
+
+    /* When Documents is open, do not pull the Home content upward.
+       This prevents the dropdown from sitting on top of "Benvenuto". */
+    body:has(.nav-dropdown[open]) main {
+        margin-top: 0;
     }
 
 }
