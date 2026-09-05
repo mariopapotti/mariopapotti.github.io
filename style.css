@@ -763,3 +763,93 @@ ul{
     color: #5bbcff;
     text-decoration: underline;
 }
+
+
+/* ==========================
+   DOCUMENTS DROPDOWN
+========================== */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown summary {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: .3s;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.nav-dropdown summary:hover {
+    color: #5bbcff;
+}
+
+.nav-dropdown[open] summary {
+    color: #5bbcff;
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    padding: 8px 0;
+    background: #0b0e16;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.45);
+    z-index: 1000;
+}
+
+.nav-dropdown-menu a,
+.nav-dropdown-menu a:visited {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .95rem;
+    white-space: normal;
+}
+
+.nav-dropdown-menu a:hover {
+    color: #5bbcff;
+    background: rgba(255,255,255,.05);
+}
+
+@media (max-width: 768px) {
+
+    .nav-dropdown-menu {
+        position: static;
+        transform: none;
+        width: min(90vw, 320px);
+        min-width: 0;
+        margin: 12px auto 0 auto;
+    }
+
+    .nav-dropdown-menu a {
+        white-space: normal;
+        text-align: center;
+    }
+
+}
+
+/* ==========================
+   ARTICLE PAGE
+========================== */
+
+.article-page{
+    text-align:left;
+}
+
+.article-page section{
+    text-align:left;
+}
