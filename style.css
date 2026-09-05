@@ -853,3 +853,80 @@ ul{
 .article-page section{
     text-align:left;
 }
+/* ==========================
+   ARTICLE PAGE - RESPONSIVE FIX
+========================== */
+
+/* The global main rule is designed for the Home page and uses a negative
+   top margin. The article must flow normally after its title block. */
+.article-page{
+    margin-top:0;
+    text-align:left;
+}
+
+.article-page section{
+    text-align:left;
+}
+
+@media (max-width: 768px) {
+
+    /* Article content must not inherit the Home page's negative positioning. */
+    .article-page{
+        margin-top:0;
+        padding:20px;
+        text-align:left;
+    }
+
+    .article-page section{
+        margin:45px auto;
+        padding:0;
+        text-align:left;
+    }
+
+    .article-page h2{
+        position:static;
+        top:auto;
+        margin:0 0 18px 0;
+        font-size:1.6rem;
+        line-height:1.25;
+        text-align:left;
+    }
+
+    .article-page p{
+        position:static;
+        top:auto;
+        max-width:none;
+        margin:0 0 22px 0;
+        font-size:1rem;
+        line-height:1.7;
+        text-align:left;
+    }
+
+    .article-page ul{
+        position:static;
+        max-width:none;
+        margin:0 0 24px 0;
+        padding-left:24px;
+        line-height:1.7;
+        text-align:left;
+    }
+
+    /* More breathing room and a smaller title on narrow screens. */
+    .object-hero{
+        margin:35px 15px 45px 15px;
+        text-align:center;
+    }
+
+    .object-hero h1{
+        font-size:2rem;
+        line-height:1.15;
+        margin:0 0 18px 0;
+    }
+
+    .object-hero p{
+        font-size:1rem;
+        line-height:1.5;
+        margin:0;
+        padding:0 5px;
+    }
+}
