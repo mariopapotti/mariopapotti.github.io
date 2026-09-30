@@ -862,6 +862,16 @@ ul{
     pointer-events: none;
 }
 
+/* Visual cue for internal content links shown beneath their parent document. */
+.nav-subitem::before {
+    content: "↗";
+    display: inline-block;
+    margin-right: 8px;
+    color: #5bbcff;
+    font-weight: bold;
+    transform: translateY(-1px);
+}
+
 .nav-parent-link {
     margin-bottom: 0;
 }
