@@ -850,7 +850,10 @@ ul{
 }
 
 .nav-subitem {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin: 0 20px 8px 38px;
     padding: 8px 14px 8px 20px;
     border-left: 1px solid rgba(255,255,255,.25);
@@ -858,7 +861,7 @@ ul{
     font-size: .88rem;
     font-weight: normal;
     line-height: 1.25;
-    white-space: normal;
+    white-space: nowrap;
     pointer-events: none;
 }
 
