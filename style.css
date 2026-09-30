@@ -993,3 +993,7 @@ ul{
         padding:0 5px;
     }
 }
+
+/* Submenu links: visual indication of internal linked content */
+.sub-arrow { display:inline-block; margin-right:7px; color:#7ec8ff; font-weight:600; }
+.nav-subitem { padding-left: 0; }
