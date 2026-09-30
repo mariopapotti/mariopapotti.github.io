@@ -862,9 +862,8 @@ ul{
     pointer-events: none;
 }
 
-/* Visual cue for internal content links shown beneath their parent document. */
-.nav-subitem::before {
-    content: "↗";
+/* Single visual cue for the internal linked content. */
+.nav-subitem .sub-arrow {
     display: inline-block;
     margin-right: 8px;
     color: #5bbcff;
@@ -993,7 +992,3 @@ ul{
         padding:0 5px;
     }
 }
-
-/* Submenu links: visual indication of internal linked content */
-.sub-arrow { display:inline-block; margin-right:7px; color:#7ec8ff; font-weight:600; }
-.nav-subitem { padding-left: 0; }
