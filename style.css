@@ -843,6 +843,33 @@ ul{
     background: rgba(255,255,255,.05);
 }
 
+
+.nav-subitem-group {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-subitem {
+    display: block;
+    margin: 0 20px 8px 38px;
+    padding: 8px 14px 8px 20px;
+    border-left: 1px solid rgba(255,255,255,.25);
+    color: rgba(255,255,255,.72);
+    font-size: .88rem;
+    font-weight: normal;
+    line-height: 1.25;
+    white-space: normal;
+    pointer-events: none;
+}
+
+.nav-parent-link {
+    margin-bottom: 0;
+}
+
+.nav-parent-link + .nav-subitem {
+    margin-top: 0;
+}
+
 @media (max-width: 768px) {
 
     .nav-dropdown-menu {
