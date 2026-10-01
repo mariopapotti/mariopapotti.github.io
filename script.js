@@ -2,21 +2,31 @@
 // GESTIONE LINGUA
 // ==========================================
 
-// Lingua iniziale
-showLanguage("it");
+// Mantiene la lingua scelta nella home anche nelle pagine interne.
+const languageButtons = {
+    it: document.getElementById("btn-it"),
+    en: document.getElementById("btn-en")
+};
 
-// Pulsanti lingua
-document.getElementById("btn-it").addEventListener("click", function () {
-    showLanguage("it");
-});
+if (languageButtons.it) {
+    languageButtons.it.addEventListener("click", function () {
+        showLanguage("it");
+    });
+}
 
-document.getElementById("btn-en").addEventListener("click", function () {
-    showLanguage("en");
-});
+if (languageButtons.en) {
+    languageButtons.en.addEventListener("click", function () {
+        showLanguage("en");
+    });
+}
+
+const savedLanguage = localStorage.getItem("siteLanguage");
+showLanguage(savedLanguage === "en" ? "en" : "it");
 
 function showLanguage(lang) {
 
     document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
 
     document.querySelectorAll(".lang-it").forEach(el => {
         el.style.display = (lang === "it") ? "block" : "none";
@@ -26,8 +36,12 @@ function showLanguage(lang) {
         el.style.display = (lang === "en") ? "block" : "none";
     });
 
-    document.getElementById("btn-it").classList.toggle("active", lang === "it");
-    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+    if (languageButtons.it) {
+        languageButtons.it.classList.toggle("active", lang === "it");
+    }
+    if (languageButtons.en) {
+        languageButtons.en.classList.toggle("active", lang === "en");
+    }
 }
 
 

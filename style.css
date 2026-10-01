@@ -772,13 +772,18 @@ ul{
 
 .pdf-download a,
 .pdf-download a:visited {
+    display: inline-block;
+    padding: 12px 18px;
     color: white;
+    background: rgba(91, 188, 255, 0.12);
+    border: 1px solid #5bbcff;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .pdf-download a:hover {
-    color: #5bbcff;
+    background: rgba(91, 188, 255, 0.24);
     text-decoration: underline;
 }
 
