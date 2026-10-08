@@ -1,7 +1,7 @@
     <!DOCTYPE html>
 <html lang="it">
 
-<head><script>(function(){try{if(localStorage.getItem("siteLanguage")==="en"){document.documentElement.lang="en";}}catch(e){}})();</script>
+<head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,15 @@
 <body>
 
 <div class="top-bar">
-<section class="object-navigation">
+
+    <div class="language-switch">
+
+        <button id="btn-it" class="lang-btn active">IT</button>
+        <button id="btn-en" class="lang-btn">EN</button>
+
+    </div>
+
+    <section class="object-navigation">
 
         <a href="index.html">
             <span class="lang-it">Home</span>
@@ -343,13 +351,13 @@
 
 <div class="pdf-download">
 
-    <p class="lang-it" style="margin-top: 0.8rem;">
-        📄 <a href="documents/Workflow%20Pixinsight%20v6.1.pdf" target="_blank" rel="noopener">Apri il Workflow PixInsight 6.1 in PDF (Italiano)</a>
-    </p>
+    <a href="documents/Workflow Pixinsight v6 WEB.pdf">
 
-    <p class="lang-en" style="margin-top: 0.8rem;">
-        📄 <a href="documents/Workflow%20Pixinsight%20v6.1%20EN.pdf" target="_blank" rel="noopener">Open the PixInsight 6.1 Workflow PDF (English)</a>
-    </p>
+        <span class="lang-it">📄 Apri il Workflow completo in PDF</span>
+
+        <span class="lang-en">📄 Open the complete Workflow PDF</span>
+
+    </a>
 
 </div>
 
