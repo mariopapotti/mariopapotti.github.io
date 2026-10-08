@@ -767,3 +767,11 @@ ul{
 /* Reserve image proportions at every viewport and prevent navigation insertion from moving the hero. */
 .hero-image, .featured-image, .object-map, .workflow-hero, .thumb-image { height:auto; }
 .top-bar .object-navigation { flex:1 1 300px; min-height:1.5em; }
+
+/* Keep localization maps at their intrinsic proportions; shrink only when needed. */
+.object-map {
+    width:auto;
+    height:auto;
+    max-width:900px;
+    max-width:min(900px, 100%);
+}
