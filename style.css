@@ -142,6 +142,9 @@ nav a:hover{
 }
 
 .featured-image{
+
+    height:auto;
+
     width:90%;
     max-width:1000px;
     border-radius:12px;
@@ -296,6 +299,9 @@ html{
 }
 
 .hero-image{
+
+    height:auto;
+
 
     width:100%;
 
