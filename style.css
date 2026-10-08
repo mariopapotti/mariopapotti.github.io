@@ -1000,3 +1000,9 @@ ul{
         padding:0 5px;
     }
 }
+
+/* CLS: reserve automatic navigation height while the gallery is fetched. */
+.top-bar .object-navigation { min-height:42px; flex:1 1 320px; }
+@media (max-width:700px) { .top-bar .object-navigation { min-height:68px; flex-basis:100%; justify-content:center; gap:12px; flex-wrap:wrap; } }
+html[lang="en"] .lang-it { display:none !important; }
+html[lang="en"] .lang-en { display:block !important; }
