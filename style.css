@@ -81,7 +81,7 @@ nav{
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
-    padding-top:50vh;
+    padding-top:47vh;
     align-items:center;
 }
 
@@ -387,7 +387,7 @@ ul{
     }
 
     .overlay{
-        padding-top:40vh;
+        padding-top:38vh;
     }
 
     main{
@@ -891,7 +891,9 @@ ul{
     font-weight: normal;
     line-height: 1.25;
     white-space: nowrap;
-    pointer-events: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .2s ease, background .2s ease;
 }
 
 /* Single visual cue for the internal linked content. */
@@ -1023,4 +1025,43 @@ ul{
         margin:0;
         padding:0 5px;
     }
+}
+
+/* Keep the homepage workflow cover compact while preserving its proportions. */
+#workflow .workflow-hero {
+    max-width: 312px;
+}
+
+.nav-dropdown-menu a.nav-subitem:hover {
+    color: #5bbcff;
+    background: rgba(255,255,255,.05);
+}
+
+/* Language-specific PDF links in the Documents menu. */
+.nav-dropdown-menu a.nav-pdf-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 20px 8px 38px;
+    padding: 8px 14px 8px 20px;
+    border-left: 1px solid rgba(255,255,255,.25);
+    color: rgba(255,255,255,.72);
+    font-size: .88rem;
+    font-weight: normal;
+    line-height: 1.25;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.nav-dropdown-menu a.pdf-language-en {
+    display: none;
+}
+
+html[data-language="en"] .nav-dropdown-menu a.pdf-language-it {
+    display: none !important;
+}
+
+html[data-language="en"] .nav-dropdown-menu a.pdf-language-en {
+    display: flex !important;
 }
