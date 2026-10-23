@@ -4,12 +4,44 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Workflow PixInsight - Mario Papotti Astrophotography</title>
+    <title>Workflow PixInsight | Mario Papotti</title>
 
     <meta name="description"
-          content="PixInsight astrophotography workflow by Mario Papotti.">
+          content="Il workflow personale di Mario Papotti per l'elaborazione delle immagini deep sky con PixInsight.">
+
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://mariopapotti.it/workflow.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Workflow PixInsight | Mario Papotti">
+    <meta property="og:description" content="Il workflow personale di Mario Papotti per l'elaborazione delle immagini deep sky con PixInsight.">
+    <meta property="og:url" content="https://mariopapotti.it/workflow.html">
+    <meta property="og:image" content="https://mariopapotti.it/images/work_hero.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Workflow PixInsight",
+      "description": "Il workflow personale di Mario Papotti per l'elaborazione delle immagini deep sky con PixInsight.",
+      "url": "https://mariopapotti.it/workflow.html",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Mario Papotti"
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -66,7 +98,7 @@
 
         <img src="images/work_hero.jpg"
              alt="Workflow PixInsight - Elaborazione astrofotografica"
-             class="workflow-hero">
+             class="workflow-hero" width="532" height="800">
 
     </a>
 

@@ -3,6 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Equipment - Mario Papotti Astrophotography</title>

@@ -2,6 +2,16 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Papotti Astrophotography</title>
     <meta name="description" content="Deep Sky Astrophotography by Mario Papotti. Images, PixInsight workflow, equipment reviews and tutorials.">
@@ -161,32 +171,32 @@
     <div class="gallery-grid">
 
         <a href="m16.html">
-            <img src="images/M16-thumb.jpg" alt="M16">
+            <img src="images/M_16_Thumb.jpg" alt="M16" width="375" height="600">
             <h3>M 16 – Eagle Nebula</h3>
         </a>
 
         <a href="ic1318.html">
-            <img src="images/IC1318-thumb.jpg" alt="IC1318">
+            <img src="images/IC_1318_Thumb.jpg" alt="IC1318" width="600" height="409">
             <h3>IC 1318 – Gamma Cygni Nebula</h3>
         </a>
 
         <a href="lbn182.html">
-            <img src="images/LBN182-thumb.jpg" alt="LBN182">
+            <img src="images/LBN_182_Thumb.jpg" alt="LBN182" width="600" height="407">
             <h3>LBN 182 – Bright Nebula in Cygnus</h3>
         </a>
 
         <a href="m17.html">
-            <img src="images/M17-thumb.jpg" alt="M17">
+            <img src="images/M_17_Thumb.jpg" alt="M17" width="600" height="415">
             <h3>M 17 – Omega Nebula</h3>
         </a>
 
         <a href="ngc7293.html">
-            <img src="images/NGC7293-thumb.jpg" alt="NGC7293">
+            <img src="images/NGC_7293_Thumb.jpg" alt="NGC7293" width="394" height="600">
             <h3>NGC 7293 – Helix Nebula</h3>
         </a>
         
         <a href="C_11.html">
-            <img src="images/C_11_thumb.jpg" alt="NGC7635">
+            <img src="images/C_11_Thumb.jpg" alt="NGC7635" width="600" height="398">
             <h3>NGC 7635 – Bubble Nebula</h3>
         </a>
 
@@ -240,7 +250,7 @@
 
         <img src="images/work_hero.jpg"
              alt="Workflow"
-             class="workflow-hero">
+             class="workflow-hero" width="532" height="800">
 
     </a>
 

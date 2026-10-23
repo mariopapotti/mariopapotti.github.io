@@ -4,6 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>IC 1318 Gamma Cygni Nebula - Astrophotography by Mario Papotti</title>
@@ -49,9 +59,9 @@
         </span>
     </p>
 
-    <img src="images/IC1318-hero.jpg"
+    <img src="images/IC_1318_Hero.jpg"
          alt="IC 1318 Gamma Cygni Nebula Sadr Region"
-         class="hero-image">
+         class="hero-image" width="1200" height="817">
 
 </section>
 
@@ -117,9 +127,9 @@
 
     </p>
 
-    <img src="images/IC1318annotated-thumb.jpg"
+    <img src="images/IC_1318_annotated.jpg"
      alt="IC 1318 annotated field"
-     class="featured-image">
+     class="featured-image" width="1200" height="817">
 
 </section>
 
@@ -222,9 +232,9 @@
 
     </p>
 
-    <img src="images/IC1318-map.jpg"
+    <img src="images/IC_1318_map.jpg"
          alt="Star map showing the location of IC 1318 in Cygnus"
-         class="object-map">
+         class="object-map" width="915" height="1000">
 
 </section>
 

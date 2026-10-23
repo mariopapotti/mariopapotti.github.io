@@ -4,6 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>M16 Eagle Nebula - Astrophotography by Mario Papotti</title>
@@ -49,9 +59,9 @@
         </span>
     </p>
 
-    <img src="images/eagle-nebula-m16-hero.jpg"
+    <img src="images/M_16_Hero.jpg"
          alt="M16 Eagle Nebula Messier 16 NGC 6611 Pillars of Creation"
-         class="hero-image">
+         class="hero-image" width="750" height="1200">
 
 </section>
 
@@ -284,10 +294,11 @@
     </p>
 
     <!-- Sky map -->
-    <img src="images/M16-map.jpg"
+    <img src="images/M_16_map.jpg"
          alt="Star map showing the location of M16"
-         class="object-map">
+         class="object-map" width="1000" height="692">
 
+</section>
 
 <section>
 

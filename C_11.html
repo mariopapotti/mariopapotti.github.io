@@ -4,6 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>NGC 7635 Bubble Nebula with SH2-157 Lobster Claw Nebula - Astrophotography by Mario Papotti</title>
@@ -51,9 +61,9 @@
         </span>
     </p>
 
-    <img src="images/C_11_hero.jpg"
+    <img src="images/C_11_Hero.jpg"
          alt="NGC 7635 Bubble Nebula with SH2-157 Lobster Claw Nebula"
-         class="hero-image">
+         class="hero-image" width="1200" height="795">
 
 </section>
 
@@ -139,7 +149,7 @@
 
     <img src="images/C_11_map.jpg"
          alt="Sky map showing the location of the NGC 7635 and SH2-157 region"
-         class="object-map">
+         class="object-map" width="1000" height="684">
 
 </section>
 
@@ -171,7 +181,7 @@
 
     <img src="images/C_11_annotated.jpg"
          alt="Annotated image of the NGC 7635 and SH2-157 region"
-         class="object-map">
+         class="object-map" width="1200" height="795">
 
 </section>
 

@@ -2,155 +2,107 @@
 // GESTIONE LINGUA
 // ==========================================
 
-// Mantiene la lingua scelta nella home anche nelle pagine interne.
 const languageButtons = {
     it: document.getElementById("btn-it"),
     en: document.getElementById("btn-en")
 };
 
-if (languageButtons.it) {
-    languageButtons.it.addEventListener("click", function () {
-        showLanguage("it");
-    });
-}
-
-if (languageButtons.en) {
-    languageButtons.en.addEventListener("click", function () {
-        showLanguage("en");
-    });
-}
-
-const savedLanguage = localStorage.getItem("siteLanguage");
-showLanguage(savedLanguage === "en" ? "en" : "it");
-
-function showLanguage(lang) {
-
-    document.documentElement.lang = lang;
-    localStorage.setItem("siteLanguage", lang);
+function showLanguage(lang, persist = true) {
+    const selectedLanguage = lang === "en" ? "en" : "it";
+    document.documentElement.lang = selectedLanguage;
+    document.documentElement.dataset.language = selectedLanguage;
 
     document.querySelectorAll(".lang-it").forEach(el => {
-        el.style.display = (lang === "it") ? "block" : "none";
+        el.style.display = selectedLanguage === "it" ? "block" : "none";
     });
-
     document.querySelectorAll(".lang-en").forEach(el => {
-        el.style.display = (lang === "en") ? "block" : "none";
+        el.style.display = selectedLanguage === "en" ? "block" : "none";
     });
 
     if (languageButtons.it) {
-        languageButtons.it.classList.toggle("active", lang === "it");
+        languageButtons.it.classList.toggle("active", selectedLanguage === "it");
     }
     if (languageButtons.en) {
-        languageButtons.en.classList.toggle("active", lang === "en");
+        languageButtons.en.classList.toggle("active", selectedLanguage === "en");
+    }
+
+    if (persist) {
+        try {
+            localStorage.setItem("siteLanguage", selectedLanguage);
+        } catch (error) {
+            // Language switching still works when storage is unavailable.
+        }
     }
 }
 
+if (languageButtons.it) {
+    languageButtons.it.addEventListener("click", () => showLanguage("it"));
+}
+if (languageButtons.en) {
+    languageButtons.en.addEventListener("click", () => showLanguage("en"));
+}
 
-// ==========================================
-// NAVIGAZIONE AUTOMATICA DEGLI OGGETTI
-// ==========================================
-
-// L'elenco delle immagini viene letto direttamente dalla Gallery
-// presente in index.html. In questo modo, quando si aggiunge una
-// nuova immagine alla Gallery, non è necessario modificare le pagine
-// precedenti: la navigazione si aggiorna automaticamente.
-
-async function setupObjectNavigation() {
-
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
-
-    // La navigazione automatica riguarda solo le pagine degli oggetti.
-    // index.html e le altre pagine del sito vengono ignorate.
-    if (currentPage === "index.html" || currentPage === "") {
-        return;
-    }
-
-    const navigationBars =
-        document.querySelectorAll(".object-navigation");
-
-    if (!navigationBars.length) {
-        return;
-    }
-
+// The head sets this value before the page is rendered. Fall back to storage
+// for pages opened without the early language initializer.
+let initialLanguage = document.documentElement.dataset.language;
+if (!initialLanguage) {
     try {
-        // Legge la Gallery direttamente da index.html.
-        const response = await fetch("index.html");
+        initialLanguage = localStorage.getItem("siteLanguage");
+    } catch (error) {
+        initialLanguage = "it";
+    }
+}
+showLanguage(initialLanguage === "en" ? "en" : "it", false);
 
-        if (!response.ok) {
-            throw new Error("Impossibile leggere index.html");
-        }
 
-        const indexHTML = await response.text();
-        const parser = new DOMParser();
-        const indexDocument = parser.parseFromString(indexHTML, "text/html");
+// ==========================================
+// NAVIGAZIONE AUTOMATICA DELLA GALLERIA
+// ==========================================
 
-        // Prende esclusivamente i link contenuti nella Gallery.
-        const galleryLinks = Array.from(
-            indexDocument.querySelectorAll(".gallery-grid > a[href]")
-        );
+// Keep this order in sync with the gallery links in index.html. Navigation is
+// built synchronously, so it does not wait for a fetch or shift the page later.
+const objectPages = [
+    "m16.html",
+    "ic1318.html",
+    "lbn182.html",
+    "m17.html",
+    "ngc7293.html",
+    "C_11.html"
+];
 
-        const objectPages = galleryLinks
-            .map(link => link.getAttribute("href"))
-            .filter(href => href && href.toLowerCase().endsWith(".html"));
+function setupObjectNavigation() {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const currentIndex = objectPages.indexOf(currentPage);
+    if (currentIndex === -1) return;
 
-        // Se la pagina corrente non appartiene alla Gallery, non fare nulla.
-        const currentIndex = objectPages.indexOf(currentPage);
+    const navigationBars = document.querySelectorAll(".object-navigation");
+    if (!navigationBars.length) return;
 
-        if (currentIndex === -1) {
-            return;
-        }
+    const previousPage = currentIndex > 0
+        ? objectPages[currentIndex - 1]
+        : "index.html#gallery";
+    const nextPage = currentIndex < objectPages.length - 1
+        ? objectPages[currentIndex + 1]
+        : "index.html#gallery";
 
-        const previousPage =
-            currentIndex > 0
-                ? objectPages[currentIndex - 1]
-                : "index.html#gallery";
-
-        const nextPage =
-            currentIndex < objectPages.length - 1
-                ? objectPages[currentIndex + 1]
-                : "index.html#gallery";
-
-        // Tutte le barre di navigazione presenti nella pagina:
-        // quella in alto e quella in fondo.
-        navigationBars.forEach(navigation => {
-
-            navigation.innerHTML = "";
-
-            // PRECEDENTE
-            const previousLink = document.createElement("a");
-            previousLink.href = previousPage;
-            previousLink.innerHTML = `
+    navigationBars.forEach(navigation => {
+        navigation.innerHTML = `
+            <a href="${previousPage}">
                 <span class="lang-it">← Immagine precedente</span>
                 <span class="lang-en">← Previous Image</span>
-            `;
-            navigation.appendChild(previousLink);
-
-            // GALLERIA
-            const galleryLink = document.createElement("a");
-            galleryLink.href = "index.html#gallery";
-            galleryLink.innerHTML = `
+            </a>
+            <a href="index.html#gallery">
                 <span class="lang-it">Galleria</span>
                 <span class="lang-en">Gallery</span>
-            `;
-            navigation.appendChild(galleryLink);
-
-            // SUCCESSIVO
-            const nextLink = document.createElement("a");
-            nextLink.href = nextPage;
-            nextLink.innerHTML = `
+            </a>
+            <a href="${nextPage}">
                 <span class="lang-it">Immagine successiva →</span>
                 <span class="lang-en">Next Image →</span>
-            `;
-            navigation.appendChild(nextLink);
-        });
+            </a>
+        `;
+    });
 
-        // Riapplica la lingua attualmente selezionata.
-        showLanguage(document.documentElement.lang || "it");
-
-    } catch (error) {
-        console.error("Navigazione Gallery non disponibile:", error);
-    }
+    showLanguage(document.documentElement.lang, false);
 }
 
-// Avvia la navigazione automatica
 setupObjectNavigation();

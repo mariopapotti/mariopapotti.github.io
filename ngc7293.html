@@ -4,6 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>NGC 7293 Helix Nebula - Astrophotography by Mario Papotti</title>
@@ -45,9 +55,9 @@
         </span>
     </p>
 
-    <img src="images/NGC7293-hero.jpg"
+    <img src="images/NGC_7293_Hero.jpg"
          alt="NGC 7293 Helix Nebula"
-         class="hero-image">
+         class="hero-image" width="787" height="1200">
 
 </section>
 
@@ -223,7 +233,7 @@
         </span>
     </p>
 
-    <img src="images/NGC7293-map.jpg"
+    <img src="images/NGC_7293_Map.jpg" width="1000" height="698"
          alt="Star map showing the location of NGC 7293 Helix Nebula"
          class="object-map">
 

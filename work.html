@@ -4,15 +4,45 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Elaborazione astrofotografica con Pixinsight by Mario Papotti</title>
+    <title>Elaborazione astrofotografica con PixInsight | Mario Papotti</title>
 
     <meta name="description"
-          content="Elaborazione astrofotografica con Pixinsight by Mario Papotti.">
+          content="Guida pratica al workflow personale di elaborazione astrofotografica deep sky con PixInsight, dalla preparazione dei dati alla rifinitura finale.">
 
-    <meta name="keywords"
-          content="astrophotography, Mario Papotti">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://mariopapotti.it/work.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Elaborazione astrofotografica con PixInsight | Mario Papotti">
+    <meta property="og:description" content="Guida pratica al workflow personale di elaborazione astrofotografica deep sky con PixInsight, dalla preparazione dei dati alla rifinitura finale.">
+    <meta property="og:url" content="https://mariopapotti.it/work.html">
+    <meta property="og:image" content="https://mariopapotti.it/images/work_thumb.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Elaborazione astrofotografica con PixInsight",
+      "description": "Guida pratica al workflow personale di elaborazione astrofotografica deep sky con PixInsight, dalla preparazione dei dati alla rifinitura finale.",
+      "image": "https://mariopapotti.it/images/work_thumb.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Mario Papotti"
+      },
+      "mainEntityOfPage": "https://mariopapotti.it/work.html"
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -42,9 +72,9 @@
 
     <h1>
 
-        <span class="lang-it">Elaborazione astrofotografica con Pixinsight</span>
+        <span class="lang-it">Elaborazione astrofotografica con PixInsight</span>
 
-        <span class="lang-en">Astrophotographic process with Pixinsight</span>
+        <span class="lang-en">Astrophotographic process with PixInsight</span>
 
     </h1>
  
@@ -59,10 +89,28 @@
     </p>
 
     <img src="images/work_thumb.jpg" width="312" height="464"
-         alt="Elaborazione astrofotografica con Pixinsight"
+         alt="Elaborazione astrofotografica con PixInsight"
          class="thumb-image">
 
 </section>
+
+
+
+<div class="pdf-download">
+
+    <p class="lang-it" style="margin-top: 0.8rem;">
+        📄 <a href="documents/Workflow%20Pixinsight%20v6.1.pdf" target="_blank" rel="noopener">Apri il Workflow PixInsight 6.1 in PDF (Italiano)</a>
+    </p>
+
+    <p class="lang-en" style="margin-top: 0.8rem;">
+        📄 <a href="documents/Workflow%20Pixinsight%20v6.1%20EN.pdf" target="_blank" rel="noopener">Open the PixInsight 6.1 Workflow PDF (English)</a>
+    </p>
+
+</div>
+
+
+
+
 
 <section>
 

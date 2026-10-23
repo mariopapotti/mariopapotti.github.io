@@ -4,6 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+    <script>
+        try {
+            const savedLanguage = localStorage.getItem("siteLanguage");
+            const initialLanguage = savedLanguage === "en" ? "en" : "it";
+            document.documentElement.lang = initialLanguage;
+            document.documentElement.dataset.language = initialLanguage;
+        } catch (error) {
+            document.documentElement.dataset.language = "it";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>M 17 - NGC 6618 Omega Nebula - Astrophotography by Mario Papotti</title>
@@ -47,9 +57,9 @@
         </span>
     </p>
 
-    <img src="images/M17-hero.jpg"
+    <img src="images/M_17_Hero.jpg"
          alt="M 17 NGC 6618 Omega Nebula in Sagittarius"
-         class="hero-image">
+         class="hero-image" width="1200" height="830">
 
 </section>
 
@@ -176,9 +186,9 @@
         </span>
     </p>
 
-    <img src="images/M17-map.jpg"
+    <img src="images/M_17_map.jpg"
          alt="Star map showing the location of M 17 in Sagittarius"
-         class="object-map">
+         class="object-map" width="1000" height="796">
 
 </section>
 

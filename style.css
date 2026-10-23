@@ -249,6 +249,14 @@ html{
     display:none;
 }
 
+html[data-language="en"] .lang-it{
+    display:none !important;
+}
+
+html[data-language="en"] .lang-en{
+    display:block !important;
+}
+
 .lang-it,
 .lang-en{
     animation:fade .25s ease;
@@ -298,6 +306,7 @@ html{
 .hero-image{
 
     width:100%;
+    height:auto;
 
     max-width:1200px;
 
@@ -488,7 +497,18 @@ ul{
     gap:30px;
     margin:60px auto 40px auto;
     text-align:center;
+    min-height:1.4em;
 
+}
+
+.object-navigation:empty{
+    min-height:1.4em;
+}
+
+@media (max-width:700px){
+    .object-navigation:empty{
+        min-height:2.8em;
+    }
 }
 
 .object-navigation a,
@@ -769,6 +789,10 @@ ul{
 /* ==========================
    PDF WORKFLOW
 ========================== */
+
+.pdf-download {
+    text-align: center;
+}
 
 .pdf-download a,
 .pdf-download a:visited {
