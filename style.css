@@ -454,6 +454,14 @@ ul{
         top: -50px;
     }
 
+        /* Lift only the home welcome text slightly on phones. */
+    main > h2:first-of-type{
+        top:-125px;
+    }
+    main > p{
+        top:-75px;
+    }
+
     .gallery-grid{
         grid-template-columns:1fr;
         gap:25px;
