@@ -643,6 +643,16 @@ ul{
 .contact-links a:hover {
     text-decoration: underline;
 }
+.about-oasis-link,
+.about-oasis-link:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-oasis-link:hover {
+    text-decoration: underline;
+}
 
 /* ==========================
    GALLERY NAVIGATION
