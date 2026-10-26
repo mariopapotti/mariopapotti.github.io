@@ -67,7 +67,8 @@ const objectPages = [
     "lbn182.html",
     "m17.html",
     "ngc7293.html",
-    "C_11.html"
+    "C_11.html",
+    "NGC_253.html"
 ];
 
 function setupObjectNavigation() {
