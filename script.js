@@ -68,7 +68,7 @@ const objectPages = [
     "m17.html",
     "ngc7293.html",
     "C_11.html",
-    "NGC_253.html"
+    "NGC_253.html",
     "C_44.html"
 ];
 
